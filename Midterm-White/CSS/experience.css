@@ -1,0 +1,164 @@
+body {
+      margin: 0;
+      padding: 0;
+      padding-top: 60px;
+      font-family: "Roboto", sans-serif;
+      background: linear-gradient(45deg, #c7c7c7, #ececec, #eaebe9, #ebeaea, #ececec , #ececec, #d8d7d7);
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .experience-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: linear-gradient(45deg, #bebdbd, #d6d7d8, #F9FAF5, #E4E4E4, #d6d7d8,  #bebdbd);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 40px;
+      
+    }
+
+    .experience-header {
+      text-align: center;
+      border-bottom: 2px solid #026d05;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .experience-header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      color: #046407; 
+      margin: 0 0 10px 0;
+      letter-spacing: 1px;
+      
+    }
+
+    .timeline-section h2 {
+      font-size: 1.8em;
+      font-weight: 500;
+      color: #046407; 
+      border-left: 4px solid #A4863D;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 40px auto;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
+    .timeline-content {
+      background: linear-gradient(45deg, #c7c7c7, #ececec, #F9FAF5, #e9e8e8, #e0e0e0, #c7c7c7);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #026d05;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .timeline-content:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      top: -10px;
+      width: 22px;
+      height: 22px;
+      background-color: #A4863D;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      
+    }
+
+    .timeline-date {
+      font-size: 1em;
+      font-weight: 500;
+      color: #A4863D;
+      margin-bottom: 5px;
+    }
+
+    .timeline-title {
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #046407;
+      margin-bottom: 5px;
+    }
+
+    .timeline-company {
+      font-size: 1.1em;
+      color: #046407;
+      margin-bottom: 10px;
+    }
+
+    .timeline-description {
+      font-size: 0.95em;
+      color: #333333;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .timeline-description ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .timeline-description li {
+      padding: 3px 0;
+      position: relative;
+      padding-left: 15px;
+    }
+
+    .timeline-description li::before {
+      content: "•";
+      color: #A4863D;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .experience-container {
+        padding: 20px 15px;
+        margin: 20px 10px;
+      }
+
+      .experience-header h1 {
+        font-size: 2em;
+      }
+
+      .timeline-content {
+        margin: 0 auto 0 0;
+        max-width: none;
+        width: calc(100% - 40px);
+      }
+
+      .timeline-dot {
+        left: 20px;
+        top: 10px;
+      }
+
+      .timeline-description {
+        text-align: left;
+      }
+    }
+
+   

@@ -1,0 +1,239 @@
+  body {
+      margin: 0;
+      padding: 0;
+      padding-top: 60px; /* para dili matabunan sa nav ang container*/
+      font-family: "Roboto", sans-serif;
+      background: linear-gradient(45deg, #c7c7c7, #ececec, #eaebe9, #ebeaea, #ececec , #ececec, #d8d7d7);
+      color: #ECF0F1;
+      line-height: 1.6;
+    }
+
+    /*Container */
+    .education-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: linear-gradient(45deg, #bebdbd, #d6d7d8, #F9FAF5, #E4E4E4, #d6d7d8,  #bebdbd);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 40px;
+    }
+
+    
+    .education-header {
+      text-align: center;
+      border-bottom: 2px solid #026d05;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .education-header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      color: #046407; 
+      margin: 0 0 10px 0;
+    }
+
+    
+    .timeline-section h2,
+    .certifications-section h2,
+    .extracurriculars-section h2 {
+      font-size: 1.8em;
+      font-weight: 500;
+      color: #046407;
+      border-left: 4px solid #A4863D;
+      padding-left: 15px;
+      margin: 40px 0 20px 0;
+      text-align: center;
+    }
+
+   
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 40px; 
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #026d05;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 40px 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      width: 16px;
+      height: 16px;
+      background-color: #A4863D;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      background: linear-gradient(45deg, #c7c7c7, #ececec, #F9FAF5, #e9e8e8, #e0e0e0, #c7c7c7);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #026d05;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin-left: 20px;
+    }
+   
+    .timeline-content:hover {
+      transform: translateY(-7px);
+      cursor: pointer;
+      
+    }
+
+
+
+
+    .timeline-date {
+      font-size: 1em;
+      font-weight: 500;
+      color: #A4863D;
+      margin-bottom: 5px;
+    }
+
+    .timeline-degree {
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #046407;
+      margin-bottom: 5px;
+    }
+
+    .timeline-institution {
+      font-size: 1.1em;
+      color: #046407;
+      margin-bottom: 10px;
+    }
+
+    .timeline-achievements {
+      font-size: 0.95em;
+      color: #333333;
+      margin-top: 10px;
+    }
+
+    .timeline-achievements ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .timeline-achievements li {
+      padding: 3px 0;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .timeline-achievements li::before {
+      content: "•";
+      color: #A4863D;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .certification-item {
+      
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #026d05;
+      text-align: center;
+    }
+
+    .certification-item h3 {
+      font-size: 1.2em;
+      color: #A4863D;
+      margin-bottom: 5px;
+    }
+
+    .certification-item p {
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .certification-item a {
+      color: #3498DB;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .certification-item a:hover {
+      color: #E67E22;
+    }
+
+   
+    .extracurriculars-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .extracurriculars-item {
+      /* background-color: rgba(52, 73, 94, 0.5); */
+      padding: 15px 20px;
+      border-radius: 8px;
+      border: 1px solid #026d05;
+      margin-bottom: 15px;
+    }
+
+    .extracurriculars-item h3 {
+      font-size: 1.1em;
+      color: #A4863D;
+      margin-bottom: 5px;
+    }
+
+    .extracurriculars-item p {
+      color: #333333;
+      margin: 0;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .education-container {
+        padding: 20px 15px;
+        margin: 20px 10px;
+      }
+
+      .education-header h1 {
+        font-size: 2em;
+      }
+
+      .timeline {
+        padding-left: 30px;
+      }
+
+      .timeline-dot {
+        left: 5px;
+        width: 12px;
+        height: 12px;
+      }
+
+      .timeline-content {
+        margin-left: 10px;
+      }
+
+      .certifications-grid {
+        grid-template-columns: 1fr;
+      }
+    }

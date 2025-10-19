@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/navigation.css">
+  <link rel="stylesheet" href="../CSS/home.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+  
+</head>
+
+<style>
+   
+</style>
+
+<body class="loading">
+  <div id="loader" role="status" aria-label="Loading...">
+    <img src="../IMAGE/web-logo.png" alt="Loading Logo">
+  </div>
+
+  <nav class="navigation" id="nav">
+    <img class="web-logo" src="../IMAGE/web-logo.png" alt="">
+    <ul class="nav-ul">
+      <li class="nav-li"><a href="home.html">Home</a></li>
+      <li class="nav-li"><a href="resume.html">Resume/CV</a></li>
+      <li class="nav-li"><a href="education.html">Education</a></li>
+      <li class="nav-li"><a href="experience.html">Experience</a></li>
+      <li class="nav-li"><a href="projects.html">Projects</a></li>
+      <li class="nav-li"><a href="activities.html">Activities</a></li>
+    </ul>
+    <div class="right-section">
+      <button class="hamburger" id="hamburger">
+        <img src="../IMAGE/hamburger.png" alt="Menu">
+      </button>
+    </div>
+  </nav>
+
+  <section class="home-section">
+    <img class="home-img" src="../IMAGE/profiletrue-no-bg.png" alt="profile">
+    <div class="short-bio">
+      <div class="short-bio-h1">
+        <h1 style="color: #000000;">Hello,</h1>
+        <h1>I Am <span style="color: #046407; ">Lourenz B. Rodriguez</span></h1>
+        <h1 class="skill"><span  style="color: #046407; " >Frontend</span> Developer</h1>
+      </div>
+      <p class="short-bio-p">"As an IT professional, I believe that the greatest tool we can wield is not just 
+        technical knowledge but the ability to adapt and innovate in a constantly evolving digital world. 
+        Every line of code has the potential to transform lives, streamline processes, and create opportunities 
+        that drive progress. For me, challenges are not obstacles—they are gateways to discovery and growth, 
+        inspiring the pursuit of excellence in technology."</p>
+
+        <button class="short-bio-hire-me"><a href="https://mail.google.com/mail/u/0/#inbox">HIRE ME</a></button>
+    </div>
+  </section>
+
+  <script src="../JS/navigation.js"></script>
+
+  <script src="../JS/loader.js"></script>
+</body>
+</html>
