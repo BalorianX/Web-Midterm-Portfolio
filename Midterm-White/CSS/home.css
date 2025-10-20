@@ -5,7 +5,6 @@
         font-family: "Roboto", sans-serif;
         background: linear-gradient(45deg, #a8a2a2, #B7BAC3, #F9FAF5, #E4E4E4, #c2c4ca, #b3afaf);
         color: #B7BAC3;
-        
     }
     
     .home-section {
@@ -13,11 +12,8 @@
         margin: 0 auto;
         margin-top: 30px;
         padding: 40px 20px;
-        
         margin-bottom: 40px;
-
     }
-    
 
     .home-img {
         width: 360px;
@@ -28,7 +24,6 @@
         transform: translateY(50px);
         animation: slideIn 2s ease-out forwards;
         background: linear-gradient(45deg, #a8a2a2, #B7BAC3, #F9FAF5, #E4E4E4, #c2c4ca, #b3afaf);
-        
     }
 
     @keyframes slideIn {
@@ -52,48 +47,84 @@
         opacity: 0;
         animation: slideIn 2s ease-out forwards;
     }
-
+    
+    .short-bio-name{
+       line-height: 60px;
+    }
     .short-bio-h1 {
         line-height: 40px;
         font-size: 27px;
         color: #000000;
-        
     }
 
     .skill {
-        
         padding-bottom: 0;
         margin-bottom: 15px;
     }
 
     .short-bio-p {
-        
-        width: 688px;
+        max-width: 688px;
         text-align: left;
         line-height: 26px;
         color: #000000;
         text-align: justify;
+        width: 100%;
     }
 
-
-    .short-bio-hire-me{
-      height: 50px;
-      width: 200px;
-      border-radius: 6px;
-      border: none;
-      background: linear-gradient(45deg, #0E300F, #026d05, #0E300F);
-      cursor: pointer;
-
+    .short-bio-hire-me {
+        height: 50px;
+        max-width: 200px;
+        border-radius: 6px;
+        border: none;
+        background: linear-gradient(45deg, #0E300F, #026d05, #0E300F);
+        cursor: pointer;
+        width: 100%;
     }
-    .short-bio-hire-me:hover{
-      transform: scale(1.1);
+    
+    .short-bio-hire-me:hover {
+        transform: scale(1.1);
     }
-     .short-bio-hire-me a{
-      text-decoration: none;
-      color: #E4E6FA;
-      font-size: 1.2em;
-     }
+    
+    .short-bio-hire-me a {
+        text-decoration: none;
+        color: #E4E6FA;
+        font-size: 1.2em;
+    }
+   
+    /* Tablet and smaller desktop adjustments */
+    @media (max-width: 1024px) {
+        .home-section {
+            padding-left: 40px;
+            padding-top: 40px;
+        }
 
+        .short-bio {
+            padding-left: 40px;
+        }
+
+        .home-img {
+            width: 280px;
+            height: 360px;
+        }
+        
+        .short-bio-name{
+            line-height: 60px;
+        }
+        .short-bio-h1 {
+            font-size: 20px;
+            line-height: 20px;
+            
+        }
+
+        .short-bio-p {
+            max-width: 500px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    /* Mobile adjustments */
     @media (max-width: 768px) {
         .home-section {
             display: flex;
@@ -120,9 +151,11 @@
         }
 
         .short-bio-h1 {
-            font-size: 14px;
+            font-size: 15px;
             margin-bottom: 15px;
             width: 100%;
+            text-align: left;
+            line-height: 45px;
         }
 
         .skill {
@@ -134,15 +167,23 @@
             max-width: 700px;
             font-size: 14px;
             width: 100%;
+            text-align: justify;
         }
-        .short-bio-hire-me{
-          margin-top: 7px;
-          
-          margin-right: auto;
+
+        .short-bio-hire-me {
+            margin-top: 15px;
+            width: 150px;
+            height: 45px;
+            align-self: center;
         }
-        body{
-          padding: 0 50px;
-          padding-top: 30px;
-          padding-bottom: -20px;
+
+        .short-bio-hire-me a {
+            font-size: 1em;
+        }
+
+        body {
+            padding: 0 20px;
+            padding-top: 30px;
+            padding-bottom: -20px;
         }
     }
